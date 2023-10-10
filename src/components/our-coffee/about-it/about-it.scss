@@ -1,0 +1,106 @@
+.about-it {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    margin: 0 20px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding-top: 30px;
+    } 
+    @media (max-width: 481px) {
+        padding-bottom: 0px;
+    } 
+
+    &__left img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        @media (max-width: 400px) {
+            margin-bottom: 10px;
+            
+        } 
+    }
+
+    &__left {
+        @media (max-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 400px) {
+            margin: 0 auto;
+            
+        }  
+    }
+
+    &__right {
+      
+        text-align: left;
+        margin-left: 85px;
+        max-width: 380px;
+
+        @media (max-width: 800px) {
+            margin-left: 15px;
+        } 
+        @media (max-width: 768px) {
+            margin-left: 0px;
+            text-align: center;
+            margin: 0 auto;
+        } 
+        
+
+        .coffee-block {
+            max-width: 346px;
+            text-align: center;
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+            } 
+            
+            &::before {
+                left: 75px;
+            }
+            &::after {
+                right: 75px;
+            }
+        }
+            
+        .it__right-title {
+            text-align: center;
+            color: #000;
+            font-size: 24px;
+            line-height: normal;
+        }
+        .it__right-subtitle {
+            padding-top: 25px;
+            color: #000;
+            line-height: normal;          
+        }
+        .bolt {
+            font-weight: 700;
+            &:hover {
+                text-decoration: underline;
+            }  
+        }
+        .it__right-text {
+            padding-top: 25px;
+            color: #000;
+            line-height: normal;          
+        }
+        .it__right-price {
+            padding-top: 16px;
+            color: #000;
+            font-size: 24px;
+            line-height: normal;  
+            span {
+                font-size: 14px;
+                font-weight: 700;
+            }          
+        }
+    }
+}
